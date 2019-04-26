@@ -17,11 +17,13 @@ Efter detta har du en demo-installation av applikation tillgänglig på din dato
 
 **Notera** att applikationen är inställd att vara en demo-applikation, vilket innebär att all data sparas tillfälligt lokalt och att inloggning sker automatiskt med påhittade användarkonton.
 
-## Nästa steg
+---
+
+### Nästa steg
 
 För att kunna använda den här applikationen i ett produktions-scenario måste nedanstånde system tillföras.
 
-### Autentisering
+#### Autentisering
 
 Applikationen kommer med inbyggt stöd för inloggning genom `Oauth2` och flödet `authorization_code`. Man kan använda sig av kommersiella saas-tjänster för detta ändamål men man har också möjligheten tillhandahålla en egen autentiseringsserver byggd på öppen mjukvara. På Umeå kommun använder vi oss av [IdentityServer4](http://docs.identityserver.io/en/latest/).
 
@@ -29,23 +31,28 @@ Applikationen kommer med inbyggt stöd för inloggning genom `Oauth2` och flöde
 2. Registrera två klienter på autentiseringsservern. Den ena klienten representerar den publika delen i applikationen, där medborgare loggar in. Den andra klienten representerar applikationens administrationsdel. Det är viktigt att dessa klienter använder sig av olika `scopes`, då det är dessa `scopes` applikationen använder för särskilja administratörer från medborgare. 
 3. Ange den nya konfigurationen för autentisering i env-filen, under avsnittet "Authentication".
 
-Applikationen förväntar sig att båda dessa inloggningar hanteras av samma autentiseringsserver. Ett tänkbart scenario vore att man hade två olika autentiseringsservrar, t.ex. Azure Active Directory för att logga in som administratör och en annan server för medborgare. För att möjliggöra detta måste man justera applikationens källkod så att den använder olika webbadresser till autentiseringsservern beroende på typ av inloggning. Ett annat förslag på alternativ vore att lägga en proxy framför autentiseringsservrarna som vidarebefordrar användaren till rätt server beroende på angivet klient-id eller scope. 
+Applikationen förväntar sig att båda dessa inloggningar hanteras av samma autentiseringsserver. Ett tänkbart scenario vore att man hade två olika autentiseringsservrar, t.ex. Azure Active Directory för att logga in som administratör och en annan server för medborgare. För att möjliggöra detta måste man justera applikationens källkod så att den använder olika webbadresser till autentiseringsservern beroende på typ av inloggning. Ett annat alternativ vore att lägga en proxy framför autentiseringsservrarna som vidarebefordrar användaren till rätt server beroende på angivet klient-id eller scope. 
 
-### Webbtjänster för att ta emot inskickade ärenden
+#### Webbtjänster för att ta emot inskickade ärenden
+
+När formulären i e-tjänsterna fyllts i och skickas in av medborgaren måste det finnas en webbtjänst som tar emot och sparar denna information på ett önskat sätt. När man bygger en e-tjänst har man möjlighet att konfigurera hur man vill att e-tjänsten ska integreras med bakomliggande system. Applikationen kommer förberedd med integrationskomponenter för e-post, sharepoint och Navet färdtjänst.
+
+1. Sätt upp ett Rest-API som svarar på anropet som avfyras från applikationen när medborgaren skickar in ett formulär i en e-tjänst. Detta API ansvarar sedan för att skjuta vidare informationen till det system där informationen ska lagras. På Umeå kommun har vi byggt en .netcore-app som lägger upp varje inskickat formulär som ett meddelande i en Azure ServiceBus, som i sin tur vittjas av "serverlösa" funktioner (Azure Functions) direkt integrerade med systemen som är slutliga mottagare av informationen. 
+2. Uppdatera konfigurationsvariabeln `VUE_APP_SEND_FORM_API_URL` med adressen till webbtjänsten. Man måste även implementera en API-rutt som kan ta emot test-inskick som görs av administratörer, adressen anges i variabeln `VUE_APP_TEST_SEND_FORM_API_URL`.
+
+Vi har för avsikt att framöver släppa våran webbtjänst för att ta emot inskick, och tillhörande integrations-funktioner, som egna git-projekt.
+
+#### Webbtjänster för att lagra och exponera e-tjänster
 
 Lorem te ipsum
 
-### Webbtjänster för att lagra och exponera e-tjänster
+### Övrigt
+
+#### Gå i produktion
 
 Lorem te ipsum
 
-## Övrigt
-
-### Gå i produktion
-
-Lorem te ipsum
-
-### Azure, application insight
+#### Azure, application insight
 
 Lorem te ipsum
 
