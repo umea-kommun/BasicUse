@@ -2,7 +2,7 @@
 
 # BasicUse
 
-Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en e-tjänstplattform byggd på dom senaste teknikerna på klient- och serversidan med Azure som hostingplattform. Den här applikationen, BasicUse, är en central del i denna plattform som används av medborgare för att från sin telefon eller dator initiera ärenden hos Umeå kommun. 
+Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en e-tjänstplattform byggd på de senaste teknikerna på klient- och serversidan med Azure som hostingplattform. Den här applikationen, BasicUse, är en central del i denna plattform som används av medborgare för att från sin telefon eller dator initiera ärenden hos Umeå kommun. 
 
 ## Kom igång på 5 minuter
 
