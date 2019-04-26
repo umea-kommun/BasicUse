@@ -1,0 +1,643 @@
+{
+  "app": {
+    "admin": {
+      "administrator": "Admin",
+      "componentHelpText": "Hjälptext",
+      "componentHelpTextHint": "Skriv en hjälptext som visas för användaren.",
+      "componentTitle": "Rubrik",
+      "componentTitleHint": "Skriv en rubrik som visas för användaren.",
+      "field": {
+        "defaultValue": "Förvalt värde",
+        "defaultValueHelpText": "Skriv in en text som är förvald för användaren.",
+        "description": "Beskrivning",
+        "descriptionHelpText": "Skriv in en beskrivning som visas för användaren.",
+        "helpText": "Hjälptext",
+        "helpTextHelpText": "Skriv in en hjälptext som visas för användaren.",
+        "title": "Titel",
+        "titleHelpText": "Skriv in en text som visas för användaren."
+      },
+      "title": "Administration"
+    },
+    "auth": {
+      "logIn": "Logga in",
+      "logOut": "Logga ut",
+      "loggedInAs": "Inloggad som",
+      "loggedOutExpiredSessionText": "Din inloggningsession har upphört. Logga in igen för att fortsätta.",
+      "loggedOutIdleText": "Du har loggats ut på grund av inaktivitet. Logga in igen för att fortsätta.",
+      "loggedOutIdleTitle": "Utloggad",
+      "loggedOutManual": "Du har nu loggats ut, vi ses en annan gång.",
+      "loggingOut": "Du loggas automatiskt ut på grund av inaktivitet om {time}. Avbryt utloggningen genom att röra musen eller använda tangentbordet."
+    },
+    "error": {
+      "400": {
+        "FormNoPath": "Länk kan inte var tom.",
+        "FormPathNotUnique": "Länk finns redan, den måste vara unik."
+      },
+      "404": "Sidan kunde inte hittas.",
+      "formNotFound": "E-tjänsten kunde inte hittas, vänligen kontrollera att du har skrivit in rätt adress.",
+      "formNotPublished": "E-tjänsten är inte tillgänglig för tillfället.",
+      "general": "Tillfälligt tekniskt fel, var god försök senare."
+    },
+    "nav": {
+      "and": "och",
+      "back": "Tillbaka",
+      "cancel": "Avbryt",
+      "close": "Stäng",
+      "content": "Innehåll",
+      "createNew": "Skapa ny",
+      "delete": "Radera",
+      "goToStart": "Gå till startsidan",
+      "loading": "Laddar",
+      "mainMenu": "Huvudmeny",
+      "navigation": "Navigering",
+      "next": "Nästa",
+      "no": "Nej",
+      "ok": "Okej",
+      "open": "Öppna",
+      "openNewWindow": "Öppna i nytt fönster",
+      "previous": "Föregående",
+      "save": "Spara",
+      "select": "Välj",
+      "send": "Skicka",
+      "skipToContent": "Hoppa till innehåll",
+      "start": "Starta",
+      "logInToStart": "Starta",
+      "startTest": "Starta test",
+      "stepFeedback": "Steg {currentStep} av {totalSteps}",
+      "testSend": "Testa integration",
+      "yes": "Ja"
+    },
+    "route": {
+      "AppStart": "Förteckning över e-tjänster",
+      "AppFormConfirmation": "Bekräftelse",
+      "AppForm": "E-tjänst",
+      "AdminForm": "Redigera e-tjänst",
+      "AdminListForms": "Administration"
+    },
+    "service": "E-tjänster",
+    "status": {
+      "draft": "Utkast",
+      "published": "Publicerad",
+      "unpublished": "Ej publicerad"
+    },
+    "time": {
+      "minute": "minut | minuter",
+      "second": "sekund | sekunder"
+    },
+    "title": "Umeå kommun",
+    "validation": {
+      "messages": {
+        "_default": "{0} verkar inte vara rätt ifyllt.",
+        "date_format": "Datum behöver vara i formatet ÅÅÅÅ-MM-DD.",
+        "email": "Ange en giltig mejladress.",
+        "emailComboboxItem": "Ange en giltig mejladress.",
+        "errorOnPublish": "Det finns obligatoriska fält i e-tjänsten som inte är korrekt ifyllda.",
+        "formIsNotValid": "Det finns obligatoriska fält i e-tjänsten som inte är korrekt ifyllda.",
+        "min": "Vänligen välj minst en.",
+        "oneOrMoreIsChecked": "Välj ett eller flera av alternativen för {0}.",
+        "phonenumber": "Ange ett giltigt telefonnummer, även riktnummer.",
+        "previousStepIsNotValid": "Föregående steg har valideringsfel.",
+        "required": "{0} är obligatorisk."
+      },
+      "optional": "Valfri"
+    }
+  },
+  "component": {
+    "AppPrintForm": {
+      "document": "Dokument",
+      "notice": "Notera att detta är en utskriftsvänlig version av e-tjänsten.",
+      "sendInfo": "Detta dokument ska skickas in per post till:",
+      "signature": "Underskrift",
+	  "contactInfo": "Kontaktuppgifter",
+	  "contactInfoSender": "Kontaktuppgifter till dig som skickar in blanketten",
+      "contactInfoHelp": "Ange gärna telefonnummer och address till din bostad.",
+      "warningUnpublished": "Denna e-tjänst är inte publicerad och får därmed ej användas!"
+    },
+    "BaseConfirmDialog": {
+      "default": {
+        "text": "Bekräfta genom att välja ja, avbryt genom att välja nej.",
+        "title": "Är du säker?"
+      }
+    },
+    "FormGdpr": {
+      "readMore": "Läs mer om hur vi hanterar dina personuppgifter",
+      "readMoreOn": "Läs mer om hur vi hanterar dina personuppgifter"
+    },
+    "PaperSignature": {
+      "name": "Namnförtydligande",
+      "signature": "Underskrift",
+      "whereAndWhen": "Ort och datum"
+    },
+    "PrintCheckBoxList": {
+      "oneOrMoreSelections": "Vänligen bocka i ett eller flera alternativ.",
+      "oneSelectionOnly": "Vänligen ange endast ett alternativ."
+    },
+    "PrintFollowUpQuestion": {
+      "info": "Kryssa för alternativen i vänsterkolumn nedan och besvara eventuella frågor i mostvarande högerkolumn."
+    },
+    "adminFields": {
+      "rightClickMenu": {
+        "copy": "Kopiera",
+        "cut": "Klipp ut",
+        "paste": "Klistra in",
+        "delete": "Radera"
+      },
+      "field": {
+        "confirmDelete": {
+          "text": "Är du säker på att du vill radera fältet? All information som finns under fältet kommer att försvinna.",
+          "title": "Radera fält?"
+        },
+        "confirmDeleteMotherQuestion": {
+          "text": "Detta fält är en moderfråga och kan ha en eller flera följdfrågor. Är du säker på att du vill radera fältet? Alla visningsregler och information som finns under fältet kommer att försvinna.",
+          "title": "Radera fält?"
+        },
+        "defaultNewTitle": "Nytt fält",
+        "delete": {
+          "btnText": "Radera fält",
+          "tooltip": "Radera fält"
+        },
+        "error": {
+          "onAddField": "Kunde inte lägga till fältet.",
+          "onDeleteField": "Kunde inte ta bort fältet."
+        }
+      }
+    },
+    "adminForm": {
+      "confirmDiscardChanges": "Ändringar ej sparade.",
+      "confirmDiscardChangesInfo": "Du har gjort ändringar i e-tjänsten utan att spara. Vill du kasta bort dessa ändringar och gå vidare?",
+      "dropZoneInfo": "Lägg till ett fält genom att dubbelklicka på fältet i högerkolumnen eller dra och släpp det här.",
+      "formTitle": "Namn och länk",
+      "fields": {
+        "title": "Lägg till fält"
+      },
+      "menu": {
+        "gdpr": "Personuppgiftsansvarig",
+        "managementobject": "Förvaltningsobjekt",
+        "preview": "Förhandsgranska",
+        "receiver": "Mottagare",
+        "subHeader": {
+          "administrate": "HANTERA",
+          "changeStatus": "ÄNDRA STATUS",
+          "eService": "E-TJÄNST"
+        },
+        "test": "Testa e-tjänst",
+        "title": "Meny"
+      },
+      "properties": {
+        "title": "Titel"
+      }
+    },
+    "adminFormTitle": {
+      "confirmOpenEserviceTitle": "Förändringar inte sparade",
+      "confirmOpenEserviceText": "Du har förändringar som inte är sparade i denna e-tjänst. Vill du ändå öppna e-tjänsten?"
+    },
+    "adminFormProperties": {
+      "descriptionDialog": {
+        "title": "Uppdatera beskrivningstext"
+      },
+      "publicLink": "Publik länk",
+      "goToEservice": "Öppna e-tjänst",
+      "advanced": "Avancerat",
+      "published": "Publicerad",
+      "draft": "Utkast",
+      "unPublished": "Inaktiverad",
+      "error": {
+        "onUpdateDescription": "Kunde inte uppdatera beskrivning."
+      },
+      "gdprNoData": "Ingen personuppgiftsansvarig finns skapad.",
+      "properties": {
+        "status": "Status",
+        "description": "Beskrivning",
+        "descriptionHelpText": "En beskrivande text för e-tjänsten.",
+        "gdpr": "Personuppgiftsansvarig",
+        "path": "Länk",
+        "pathHelpText": "Länken till e-tjänsten ändras till det som står här.",
+        "pm3": "Förvaltningsobjekt",
+        "receiver": "Mottagare",
+        "title": "Egenskaper",
+        "titleOnForm": "Namn"
+      }
+    },
+    "adminGdprManager": {
+      "cancel": "Avbryt",
+      "close": "Stäng",
+      "confirmCloseGdpr": {
+        "text": "Det finns personuppgiftsansvariga som har ändrats. Förändringar kommer att förloras om du stänger. Vill du stänga?",
+        "title": "Förändringar i personuppgiftsansvarig"
+      },
+      "confirmDelete": {
+        "text": "Är du säker på att du vill radera personuppgiftsansvarig? All information om personuppgiftsansvarig kommer att raderas.",
+        "title": "Ta bort personuppgiftsansvarig?"
+      },
+      "create": "Skapa personuppgiftsansvarig",
+      "delete": "Radera",
+      "error": {
+        "onCreateGdpr": {
+          "missingTitle": "Kan inte spara personuppgiftsansvarig, titeln saknas.",
+          "missingUrl": "Kan inte spara personuppgiftsansvarig, url saknas."
+        },
+        "onDeleteGdpr": {
+          "general": "Det gick inte att ta bort personuppgiftsansvarig.",
+          "restricted": "Det gick inte att ta bort en personuppgiftsansvarig som används i andra e-tjänster."
+        },
+        "onSaveGdpr": {
+          "general": "Kan inte spara personuppgiftsansvarig.",
+          "missingTitle": "Kan inte spara personuppgiftsansvarig, titeln saknas.",
+          "missingUrl": "Kan inte spara personuppgiftsansvarig, url saknas."
+        }
+      },
+      "gdpr": {
+        "defaultTitle": "- Ny personuppgiftsansvarig",
+        "defaultUrl": "https://www.umea.se/kommun",
+        "title": "Namn",
+        "url": "Länk"
+      },
+      "save": "Spara",
+      "title": "Hantera personuppgiftsansvariga"
+    },
+    "adminIntegration": {
+      "integrationOption": {
+        "missingTitle": "Ingen titel"
+      },
+      "noIntegration": "Inga integrationer",
+      "properties": {
+        "title": "Integrationer"
+      }
+    },
+    "adminDisplayRule": {
+      "properties": {
+        "title": "Visningsregler"
+      },
+      "title": "Visningsregler",
+      "addDisplayRule": "Lägg till visningsregler",
+      "noDisplayRule": "Inga visningsregler",
+      "displayRuleOption": {
+        "missingTitle": "Ingen titel"
+      }
+    },
+    "adminIntegrationEmail": {
+      "cancel": "Avbryt",
+      "confirmClose": {
+        "text": "Det finns ändringar i mejlintegrationen. Förändringar kommer att förloras om du stänger. Vill du stänga?",
+        "title": "Förändringar i mejlintegration"
+      },
+      "confirmDelete": {
+        "text": "Är du säker på att du vill radera mejlintegration? All information om mejlintegration kommer att raderas.",
+        "title": "Ta bort mejlintegration?"
+      },
+      "create": "Skapa",
+      "delete": "Radera",
+      "field": {
+        "attachFiles": "Bifoga all information som skickats in i e-tjänsten (bilagor och formulär)",
+        "body": "Meddelande",
+        "bodyHelpText": "Skriv ett meddelande",
+        "receiver": "Mottagare",
+        "receiverHelpText": "Ange mejladress till mottagare",
+        "sender": "Avsändare",
+        "senderHelpText": "Ange avsändare",
+        "subject": "Ämne",
+        "subjectHelpText": "Ange ämnesfält i mejl",
+        "title": "Titel",
+        "titleHelpText": "Ange en titel för integrationen"
+      },
+      "update": "Uppdatera"
+    },
+	
+	 "adminIntegrationSharepoint": {
+      "create": "Skapa",
+      "cancel": "Avbryt",
+      "delete": "Radera",
+      "update": "Uppdatera",
+      "sharepointurl": "Sharepoint url : ",
+      "field": {
+        "title": "Titel på integration",
+        "titleHelpText": "Ett visningsnamn som bara syns för administratörer",
+        "siteTitle": "Namn på webbplats i Sharepoint",
+        "siteTitleHelpText": "Notera att webbplatsen kommer skapas, vid första integrationstillfället, om den inte redan finns",
+        "userEmail": "E-post till ägare av webbplatsen",
+        "userEmailHelpText": "Endast relevant om webbplatsen inte finns sedan tidigare."
+      },
+      "confirmDelete": {
+        "title": "Ta bort sharepoint integration?",
+        "text": "Är du säker på att du vill radera sharepoint integration? All information om sharepoint integration kommer att raderas!"
+      },
+      "confirmClose": {
+        "title": "Förändringar i sharepoint integration",
+        "text": "Det finns ändringar i sharepoint integrationen. Förändringar kommer att förloras om du stänger. Vill du stänga?"
+      }
+  },
+
+  "navetIntegration": {
+      "create": "Skapa",
+      "cancel": "Avbryt",
+      "delete": "Radera",
+      "update": "Uppdatera",
+      "field": {
+        "title": "Titel på integration",
+        "titleHelpText": "Ett visningsnamn som bara syns för administratörer",
+        "matterType": "Typ av ansökan",
+        "exportedFields": "Fält att exportera till Navet",
+        "custodian": "Svar som kommer betyda att personen söker för annans räkning (kan lämnas tom)",
+        "custodianHelpText": "Om svar konfigureras förväntas formuläret innehåll ett XYZ-fält som ska innehålla personnummret för den person som ansökan gäller",
+        "custodianWarning": "Du måste lägga till ett personnummer-fält i formuläret!"
+      },
+      "matterType": {
+        "ftj": "Färdtjänst",
+        "rftj": "Riksfärdtjänst"
+      },
+      "confirmDelete": {
+        "title": "Ta bort integrationen?",
+        "text": "Är du säker på att du vill radera integrationen? All information om integrationen kommer att raderas!"
+      },
+      "confirmClose": {
+        "title": "Förändringar i integrationen",
+        "text": "Det finns ändringar i integrationen. Förändringar kommer att förloras om du stänger. Vill du stänga?"
+      }
+  },
+	
+    "adminItemListManager": {
+      "addItem": "Lägg till alternativ",
+      "checked": "Förvald",
+      "title": "Rubrik"
+    },
+    "adminListForms": {
+      "addEServiceDialog": {
+        "description": "Är du säker på att du vill skapa en ny e-tjänst?",
+        "title": "Skapa ny e-tjänst?"
+      },
+      "create": "Skapa e-tjänst",
+      "search": {
+        "label": "Sök"
+      },
+      "table": {
+        "headers": {
+          "text1": "Id",
+          "text2": "Titel",
+          "text3": "Mottagare",
+          "text4": "Status"
+        },
+        "nodata": "Tyvärr finns inga e-tjänster att visa.",
+        "noresult": {
+          "labelpart1": "Din sökning efter ",
+          "labelpart2": " hittade inga resultat."
+        },
+        "pagination": {
+          "All": "Alla",
+          "labelof": " av ",
+          "rowsperpagetext": "Rader per sida: "
+        }
+      },
+      "title": "Administration e-tjänster"
+    },
+    "adminDisplayRuleDialog": {
+      "titleQuestion": "Kopplingsbara frågor",
+      "titleResponse": "Svarsalternativ",
+      "create": "Skapa",
+      "cancel": "Avbryt",
+      "delete": "Radera",
+      "update": "Uppdatera",
+      "title": "Visningsregel",
+      "field": {
+        "title": "Titel",
+        "titleHelpText": "Namnge din regel som följdfrågorna ska lyssna på"
+      },
+      "confirmDelete": {
+        "title": "Ta bort visningsregel?",
+        "text": "Är du säker på att du vill radera visningsregeln? Det kan finnas frågor som använder denna regel. All information om visningsregeln kommer att raderas!"
+      },
+      "confirmClose": {
+        "title": "Förändringar i visningsregel",
+        "text": "Det finns ändringar i visningsregeln. Förändringar kommer att förloras om du stänger. Vill du stänga?"
+      }
+    },
+    "adminPm3Manager": {
+      "cancel": "Avbryt",
+      "close": "Stäng",
+      "confirmClosePm3": {
+        "text": "Det finns förvaltningsobjekt som har ändrats. Förändringar kommer att förloras om du stänger. Vill du stänga?",
+        "title": "Förändringar i förvaltningsobjekt"
+      },
+      "confirmDelete": {
+        "text": "Är du säker på att du vill radera förvaltningsobjektet? All information om förvaltningsobjektet kommer att raderas.",
+        "title": "Ta bort förvaltningsobjekt?"
+      },
+      "create": "Skapa förvaltningsobjekt",
+      "delete": "Radera",
+      "error": {
+        "onCreatePm3": "Kunde inte skapa förvaltningsobjekt, titeln saknas.",
+        "onDeletePm3": {
+          "general": "Det gick inte att ta bort förvaltningsobjekt.",
+          "restricted": "Det gick inte att ta bort ett förvaltningsobjekt som används i andra e-tjänster."
+        },
+        "onSavePm3": {
+          "general": "Kan inte spara förvaltningsobjekt.",
+          "missing": "Kan inte spara förvaltningsobjekt, titeln saknas."
+        }
+      },
+      "pm3": {
+        "defaultTitle": "- Nytt förvaltningsobjekt",
+        "title": "Namn"
+      },
+      "save": "Spara",
+      "title": "Hantera förvaltningsobjekt"
+    },
+    "adminReceiverManager": {
+      "cancel": "Avbryt",
+      "close": "Stäng",
+      "confirmCloseReceiver": {
+        "text": "Det finns mottagare som har ändrats. Förändringar kommer att förloras om du stänger. Vill du stänga?",
+        "title": "Förändringar i mottagaren"
+      },
+      "confirmDelete": {
+        "text": "Är du säker på att du vill radera mottagaren? All information om mottagaren kommer att raderas.",
+        "title": "Ta bort morttagaren?"
+      },
+      "create": "Skapa mottagare",
+      "delete": "Radera",
+      "error": {
+        "onCreateReceiver": "Kunde inte skapa mottagaren, namn saknas.",
+        "onDeleteReceiver": {
+          "general": "Det gick inte att ta bort mottagaren.",
+          "restricted": "Det gick inte att ta bort en mottagare som används i andra e-tjänster."
+        },
+        "onSaveReceiver": {
+          "general": "Kan inte spara mottagaren.",
+          "missingPath": "Kan inte spara mottagaren, länk saknas.",
+          "missingTitle": "Kan inte spara mottagaren, namn saknas."
+        }
+      },
+      "receiver": {
+        "defaultPath": "https://www.umea.se/kommun",
+        "defaultTitle": "- Ny mottagare",
+        "path": "Länk",
+        "title": "Namn"
+      },
+      "save": "Spara",
+      "title": "Hantera mottagare"
+    },
+    "adminSteps": {
+      "add": {
+        "defaultName": "Steg",
+        "tooltip": "Lägg till ett steg"
+      },
+      "confirmDelete": {
+        "text": "Är du säker att du vill radera steget? Alla fält som finns under steget kommer att försvinna.",
+        "title": "Radera steg och fält?"
+      },
+      "delete": {
+        "btnText": "Radera steg",
+        "tooltip": "Radera steg"
+      },
+      "description": {
+        "hint": "Skriv en valfri beskrivning av steget.",
+        "label": "Beskrivning"
+      },
+      "error": {
+        "onAddStep": "Kunde inte lägga till ett nytt steg.",
+        "onDeleteStep": "Kunde inte ta bort steget.",
+        "onUpdateStep": "Kunde inte uppdatera steget."
+      },
+      "title": {
+        "hint": "Skriv en titel för steget.",
+        "label": "Titel"
+      }
+    },
+    "adminValidationManager": {
+      "validation": {
+        "condition": "Villkor",
+        "title": "Lägg till validering",
+        "types": {
+          "length": "Antal tecken",
+          "oneOrMoreIsChecked": "Ett eller flera alternativ har valts",
+          "required": "Obligatoriskt fält"
+        }
+      }
+    },
+    "appDescription": {
+      "confirmationText": "Tack, du är nu klar.",
+      "download": "Ladda ner kopia på dina svar",
+      "text": "Mottagare av informationen som du skickar in via denna e-tjänst är ",
+      "printText" :"Vill du skriva ut blanketten istället så gör du det genom att klicka på utskriftsikonen nere till höger."
+    },
+    "appForm": {
+      "startPageTitle": "Beskrivning av e-tjänst",
+      "adminDisabledSendButton": "Inloggad som admin",
+      "allChangesSaved": "Alla ändringar är sparade.",
+      "savedToday": "Sparad idag",
+      "cancel": {
+        "text": "Om du avbryter kommer all information du angivit i formuläret att gå förlorade.",
+        "title": "Vill du avbryta?"
+      },
+      "editButtonTitle": "Redigera e-tjänst",
+      "notSaved": "Ej sparad",
+      "previewWarningTitle": "Förhandsgranskning",
+      "print": "Skriv ut",
+      "saved": "Sparad ",
+      "testWarningInfoText": "Detta är ett utkast av e-tjänsten, avsedd att användas internt på Umeå kommun. Det innebär att du inte kan använda tjänsten. All information som visas här kan vara inkorrekt och kan komma att ändras i framtida versioner av e-tjänsten.",
+      "testWarningInfoTitle": "Denna e-tjänst är inte publicerad.",
+      "testWarningTitle": "Testa e-tjänst"
+    },
+    "appHeader": {
+      "navigation": "Meny",
+      "logoAlt": "Logotyp för Umeå kommun",
+      "appName": "Umeå kommuns e-tjänster",
+      "menu": {
+        "allServices": "Alla e-tjänster",
+        "about": "Om",
+        "admin": "Administration",
+        "logout": "Logga ut"
+      }
+    },
+    "appFooter": {
+      "byLine": "Du använder en av Umeå kommuns e-tjänster och skickar ditt ärende direkt till kommunen."
+    },
+    "appStart": {
+      "title": "Översikt"
+    },
+    "fieldCheckBox": {
+      "description": "Lägg till kryssrutor där ett eller flera alternativ kan väljas.",
+      "title": "Kryssruta"
+    },
+    "fieldDatePicker": {
+      "dateExpression": " [åååå-mm-dd]",
+      "description": "Lägg till ett fält för att välja datum med en kalender.",
+      "title": "Datum"
+    },
+    "fieldFileUpload": {
+      "acceptMultipleFiles": "Tillåt uppladdning av flera filer",
+      "acceptedFileTypes": "Accepterade filtyper",
+      "allowAnyFileType": "Tillåt bilder, Word och PDF",
+      "allowOnlyImages": "Enbart bilder (jpeg och png)",
+      "allowOnlyPdfAndWord": "Enbart Word och PDF",
+      "description": "Lägg till ett fält för att tillåta användaren att ladda upp en eller flera filer genom att klicka eller dra och släppa.",
+      "maxFiles": "Max antal filer",
+      "printAttachments": "Bilagor",
+      "printInfo": "Ange vilka dokument som du eventuellt skickar med som bilagor.",
+      "title": "Filuppladdning"
+    },
+    "fieldRadioButton": {
+      "description": "Lägg till radioknappar där endast ett alternativ kan väljas.",
+      "title": "Radioknapp"
+    },
+    "fieldSection": {
+      "description": "Lägg till en sektion med rubrik och valfri beskrivning.",
+      "title": "Sektion"
+    },
+    "fieldSelectList": {
+      "description": "Lägg till en rullist där endast ett alternativ kan väljas.",
+      "title": "Rullist"
+    },
+    "fieldTextArea": {
+      "description": "Lägg till en textruta med flera rader.",
+      "title": "Textruta"
+    },
+    "fieldTextBox": {
+      "description": "Lägg till en textrad.",
+      "title": "Textrad"
+    },
+    "filepond": {
+      "fileValidateTypeLabelExpectedTypes": "Förväntar {allButLastType} eller {lastType}",
+      "label": "Ladda upp filer genom att klicka eller släppa här.",
+      "labelButtonAbortItemLoad": "Avbryt",
+      "labelButtonAbortItemProcessing": "Avbryt",
+      "labelButtonProcessItem": "Ladda upp",
+      "labelButtonRemoveItem": "Ta bort",
+      "labelButtonRetryItemLoad": "Försök igen",
+      "labelButtonRetryItemProcessing": "Försök igen",
+      "labelButtonUndoItemProcessing": "'Ångra",
+      "labelFileLoadError": "Fel vid laddning",
+      "labelFileLoading": "Laddar",
+      "labelFileProcessing": "Uppladdning",
+      "labelFileProcessingAborted": "Uppladdning avbruten",
+      "labelFileProcessingComplete": "Uppladdning klar",
+      "labelFileProcessingError": "Fel vid uppladdning",
+      "labelFileSizeNotAvailable": "Storlek ej tillgänglig",
+      "labelFileTypeNotAllowed": "Fil av ogiltig typ",
+      "labelFileWaitingForSize": "Väntar på storlek",
+      "labelMaxFileSize": "Maximal filstorlek är {filesize}",
+      "labelMaxFileSizeExceeded": "Filen är för stor",
+      "labelMaxTotalFileSize": "Maximal total filstorlek är {filesize}",
+      "labelTapToCancel": "tryck för att avbryta",
+      "labelTapToRetry": "tryck för att försöka igen",
+      "labelTapToUndo": "tryck för att ångra",
+      "labelTotalFileSizeExceeded": "Maximal totalstorlek har överskridits",
+      "viewLabelIdle": "fil(er) har bifogats.",
+      "viewLabelIdleEmpty": "Inga bifogade filer"
+    },
+    "formUserContactInfo": {
+      "address": "Adress",
+      "city": "Ort",
+      "email": "Mejl",
+      "firstname": "Förnamn",
+      "lastname": "Efternamn",
+      "phonenumber": "Telefonnummer",
+      "postalNumber": "Postnummer",
+      "socialsecuritynumber": "Personnummer",
+      "title": "Dina kontaktuppgifter"
+    },
+    "formValidationSummary": {
+      "error": "Det finns {count} fel i e-tjänsten.",
+      "resolution": "Vänligen åtgärda det innan du fortsätter till nästa steg."
+    }
+  }
+}

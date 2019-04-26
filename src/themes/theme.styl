@@ -1,0 +1,91 @@
+@import '~vuetify/src/stylus/settings/_variables'
+
+/**
+ * Vuetify theme for Umeå kommun. Modifies default material design theme.
+ */
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+
+/**  
+ * Custom variables - modify Vuetify's variables 
+ * See available variables in _variables.styl 
+ */
+
+// Font settings
+$body-font-family = Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$font-size-root = 14px
+$line-height-root = 1.5
+
+// Headings
+// ============================================================
+$heading-font-family = $body-font-family
+$headings = {
+  h1: { size: 112px, weight: 300, line-height: 1, letter-spacing: -.04em, font-family: $heading-font-family },
+  h2: { size: 56px, weight: 400, line-height: 1.35, letter-spacing: -.02em, font-family: $heading-font-family },
+  h3: { size: 45px, weight: 400, line-height: 48px, letter-spacing: normal, font-family: $heading-font-family },
+  h4: { size: 34px, weight: 400, line-height: 40px, letter-spacing: normal, font-family: $heading-font-family },
+  h5: { size: 24px, weight: 400, line-height: 32px, letter-spacing: normal, font-family: $heading-font-family },
+  h6: { size: 20px, weight: 500, line-height: 1, letter-spacing: .02em, font-family: $heading-font-family },
+  subheading: { size: 16px, weight: 400 },
+  body-2: { size: 14px, weight: 500 },
+  body-1: { size: 14px, weight: 400 },
+  caption: { size: 12px, weight: 400 },
+  button: { size: 14px, weight: 500 }
+}
+
+// Buttons
+$button-font-size = 15x
+$button-small-font-size = 13px
+$button-large-font-size = 16px
+
+/**  
+ * Custom theme - modifiy Vuetify's material design theme
+ * See available theme variables in _theme.styl
+ * Ex. $material-light.text-color = #EF5350;
+ */
+
+// Adjust font colors [WCAG 1.4.1, color contrast]
+$material-light.background = #F2F2F2 // Brisk
+$material-light.text-color = #333
+$material-light.text.disabled = rgba(#555555, .60)
+$material-light.text.link = #333
+$material-light.text.link-hover = rgba(#555555, .7)
+$material-light.list-tile.hover = rgba(#006e1e, .2) // Background version of Björk darker
+
+// Import of default theme for Vuetify shoulde be after custom modifications
+@import '~vuetify/src/stylus/main'
+
+/** Overwrite css manually in some cases
+ * Icons inside button with left or right should have less margin, original value was margin-*: 16px
+ * Reference file: node_modules/vuetify/stylus/components/_buttons.styl
+ */
+.v-btn
+  .v-icon
+    &--right
+      margin-left: 6px
+
+    &--left
+      margin-right: 6px
+
+.theme--light.v-chip
+  &--removable
+      background-color: rgba(#00a01e, .2)
+
+.application  
+  a
+    color: $material-light.text.link
+  a:hover
+    color: $material-light.text.link-hover
+
+.v-card__title {
+  .theme--light.v-icon {
+    color: #111;
+  }
+}
