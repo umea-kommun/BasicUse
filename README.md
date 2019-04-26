@@ -6,7 +6,7 @@ Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en e-tjänstplatt
 
 ## Kom igång på 5 minuter
 
-Genomför följande steg så har du på några minuter fått en applikation du kan använda för att skapa och publicera e-tjänster.
+Genomför följande steg så har du på några minuter fått upp en applikation som du kan använda för att skapa och publicera e-tjänster.
 
 1. Installera [Node.js](https://nodejs.org/en/download/)
 2. Ladda ner applikationens källkod till din dator, antingen med `git` eller genom att [ladda ner en zip-fil](https://github.com/umea-kommun/BasicUse/archive/master.zip)
