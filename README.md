@@ -21,7 +21,7 @@ Efter detta har du en demo-installation av applikation tillgänglig på din dato
 
 ### Nästa steg
 
-För att kunna använda den här applikationen i ett produktions-scenario måste nedanstånde system tillföras.
+För att kunna använda den här applikationen i ett produktions-scenario måste man tillföra nedanstånde system.
 
 #### Autentisering
 
