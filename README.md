@@ -15,7 +15,7 @@ Genomför nedanstående steg så kan du komma
 
 Efter detta har du en demo-installation av applikation tillgänglig på din dator. Öppna en webbläsare och gå till http://localhost:8080/ för att testa att använda e-tjänster. Du kan även gå till http://localhost:8080/admin för att som administratör skapa och redigera e-tjänster. 
 
-**Notera** att applikationen är inställd att vara en demo-applikation, vilket innebär att all data sparas tillfälligt lokalt och att inloggning sker automatiskt med påhittade användarkonton.
+**Notera!** Den här applikationen är inställd att vara en demonstration av de funktioner som erbjuds, vilket innebär att all data sparas tillfälligt lokalt och att inloggning sker automatiskt med påhittade användarkonton.
 
 ---
 
