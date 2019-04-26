@@ -41,20 +41,10 @@ När formulären i e-tjänsterna fyllts i och skickas in av medborgaren måste d
 
 Vi har för avsikt att framöver släppa våran webbtjänst för att ta emot inskick, och tillhörande integrations-funktioner, som egna git-projekt.
 
-#### Webbtjänster för att lagra och exponera e-tjänster
+#### API för att lagra och exponera e-tjänster
 
-Lorem te ipsum
+E-tjänsterna består av ett antal datamodeller som ligger definerade i den här applikationens källkod. Detta gör det förhållandevis enkelt att tillhandahålla de API:er som krävs för att lagra e-tjänsterna. I sin allra enklaste form skulle datamodellerna kunna lagras som blobbar i en key-value-store eller som filer direkt på disk. På Umeå kommun har vi byggt en applikation i `.netcore` som lagrar informationen i en SQL-databas via `entityframework`.
 
-### Övrigt
+1. Sätt upp API:er som svarar på de anrop som skickas från applikationen när adminstratören bygger e-tjänster. Här finns ingen publik dokumentation att tillgå så man får läsa källkoden eller inspektera anropen i webbläsarkonsolen.
+2. Uppdatera konfigurationsvariablerna i env-filen med rätt adresser till API:et, under sektionen "Webservices"
 
-#### Gå i produktion
-
-Lorem te ipsum
-
-#### Azure, application insight
-
-Lorem te ipsum
-
-### Alternativ till autentisering
-
-Lorem te ipsum
