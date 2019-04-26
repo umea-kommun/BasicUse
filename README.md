@@ -2,7 +2,7 @@
 
 # BasicUse
 
-Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en e-tjänstplattform byggd på dom senaste teknikerna på klient- och serversidan med Azure som hostingplattform. Den här applikationen, BasicUse, är en central del i denna plattform som används av medborgare för att via sin telefon eller dator initiera ärenden hos Umeå kommun. 
+Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en e-tjänstplattform byggd på dom senaste teknikerna på klient- och serversidan med Azure som hostingplattform. Den här applikationen, BasicUse, är en central del i denna plattform som används av medborgare för att från sin telefon eller dator initiera ärenden hos Umeå kommun. 
 
 ## Kom igång på 5 minuter
 
@@ -36,8 +36,8 @@ Applikationen förväntar sig att båda dessa inloggningar hanteras av samma aut
 
 När formulären i e-tjänsterna fyllts i och skickas in av medborgaren måste det finnas ett API som tar emot och sparar denna information på önskat sätt. När man bygger en e-tjänst har man möjlighet att konfigurera hur man vill att e-tjänsten ska integreras med bakomliggande system. Applikationen kommer förberedd med integrationskomponenter för e-post, sharepoint och Navet färdtjänst.
 
-1. Sätt upp ett Rest-API som svarar på anropet som avfyras från applikationen när medborgaren skickar in ett formulär i en e-tjänst. Detta API ansvarar sedan för att skjuta vidare informationen till det system där informationen ska lagras. På Umeå kommun har vi byggt en .netcore-app som lägger upp varje inskickat formulär som ett meddelande i en Azure ServiceBus, som i sin tur vittjas av "serverlösa" funktioner (Azure Functions) direkt integrerade med systemen som är slutliga mottagare av informationen. 
-2. Uppdatera konfigurationsvariabeln `VUE_APP_SEND_FORM_API_URL` med adressen till webbtjänsten. Man måste även implementera en API-rutt som kan ta emot test-inskick som görs av administratörer, adressen anges i variabeln `VUE_APP_TEST_SEND_FORM_API_URL`.
+1. Sätt upp ett Rest-API som svarar på anropet som avfyras från applikationen när medborgaren skickar in ett formulär i en e-tjänst. Detta API ansvarar sedan för att föra vidare informationen till det system där informationen ska lagras. På Umeå kommun har vi byggt en applikation i `.netcore` som lägger upp varje inskickat formulär som ett meddelande på en kö i `Azure ServiceBus`, som i sin tur vittjas av "serverlösa" funktioner direkt integrerade med systemen som är slutliga mottagare av informationen. 
+2. Uppdatera konfigurationsvariabeln `VUE_APP_SEND_FORM_API_URL` med adressen till API:et. Man måste även implementera en API-rutt som kan ta emot test-inskick som görs av administratörer, adressen anges i variabeln `VUE_APP_TEST_SEND_FORM_API_URL`.
 
 Vi har för avsikt att framöver släppa våran webbtjänst för att ta emot inskick, och tillhörande integrations-funktioner, som egna git-projekt.
 
