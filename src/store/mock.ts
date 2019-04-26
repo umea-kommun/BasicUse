@@ -9,13 +9,13 @@ import { FormStatus } from '@/models/Enums';
  */
 export default function(axios) {
   const delay = 200;
-  const mock = new MockAdapter(axios, { delayResponse: delay });
+  const mock = new MockAdapter(axios, { delayResponse: delay }) as any;
   const data = loadDataFromLocalStorage() || MockedDefaultData as any;
-  const pm3 = data.forms.map(f => f.data.attributes.pM3);
-  const receivers = data.forms.map(f => f.data.attributes.receiver);
+  const pm3 = MockedDefaultData.forms.map(f => f.data.attributes.pM3);
+  const receivers = MockedDefaultData.forms.map(f => f.data.attributes.receiver);
   const gdprList: any[] = [];
 
-  data.forms.forEach(f => {
+  MockedDefaultData.forms.forEach(f => {
     f.data.attributes.gDPR.dataControllers.forEach(gdpr => {
       gdprList.push(gdpr);
     });
