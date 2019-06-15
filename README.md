@@ -17,13 +17,12 @@ Nu kan du öppna en webbläsare och gå till http://localhost:8080/ för att tes
 
 **Notera!** Den här applikationen är inställd att ge en **demonstration av de funktioner som erbjuds**, vilket innebär att all data sparas tillfälligt lokalt och att inloggning sker automatiskt med påhittade användarkonton.
 
----
 
-### Nästa steg
+## Använda BasicUse i produktion
 
 För att kunna använda den här applikationen i ett produktionscenario måste man tillföra nedanstånde system.
 
-#### Autentisering
+### Autentisering
 
 1. Sätt upp en autentiseringsserver med stöd för [Oauth2](https://oauth.net/) och flödet `authorization_code`. Man kan använda sig av kommersiella saas-tjänster för detta ändamål men man har också möjligheten tillhandahålla en egen autentiseringsserver byggd på öppen mjukvara. På Umeå kommun använder vi oss av [IdentityServer4](https://identityserver.io/).
 1. I applikationens [env-fil](https://github.com/umea-kommun/BasicUse/blob/master/.env) anger du `Oauth` som värde på konfigurationsvariabeln `VUE_APP_AUTH_CLASS`.
@@ -32,7 +31,7 @@ För att kunna använda den här applikationen i ett produktionscenario måste m
 
 Applikationen förväntar sig att båda dessa inloggningar hanteras av samma autentiseringsserver. Ett tänkbart scenario vore att man har två olika autentiseringsservrar, t.ex. Azure Active Directory för att logga in som administratör och en annan server för medborgare. För att möjliggöra detta måste man justera applikationens källkod så att den använder olika webbadresser till autentiseringsservern beroende på typ av inloggning. Ett annat alternativ vore att lägga en proxy framför autentiseringsservrarna som vidarebefordrar användaren till rätt server beroende på angivet klient-id eller scope. 
 
-#### API för att ta emot inskickade ärenden
+### API för att ta emot inskickade ärenden
 
 När formulären i e-tjänsterna fyllts i och skickas in av medborgaren måste det finnas ett API som tar emot och sparar denna information på önskat sätt. När man bygger en e-tjänst har man möjlighet att konfigurera hur man vill att e-tjänsten ska integreras med bakomliggande system. Applikationen kommer förberedd med integrationskomponenter för e-post, sharepoint och Navet färdtjänst.
 
@@ -41,10 +40,22 @@ När formulären i e-tjänsterna fyllts i och skickas in av medborgaren måste d
 
 Vi har för avsikt att framöver släppa våra webbtjänster för att ta emot inskick, och tillhörande integrations-funktioner, som egna git-projekt.
 
-#### API för att lagra och exponera e-tjänster
+### API för att lagra och exponera e-tjänster
 
 E-tjänsterna består av ett antal datamodeller som ligger definerade i den här applikationens källkod. Detta gör det förhållandevis enkelt att tillhandahålla de API:er som krävs för att lagra e-tjänsterna. I sin allra enklaste form skulle informationen kunna lagras som blobbar i en key-value-store eller som filer direkt på disk. På Umeå kommun har vi byggt en applikation i `.netcore` som lagrar informationen i en SQL-databas via `entityframework`.
 
 1. Sätt upp API:er som svarar på de anrop som skickas från applikationen när adminstratören bygger e-tjänster. Här finns ingen publik dokumentation att tillgå så man får läsa källkoden eller inspektera anropen i webbläsarkonsolen.
 2. Uppdatera konfigurationsvariablerna i env-filen med rätt adresser till API:et, under sektionen "Webservices"
+
+
+## Övrigt
+
+### Ändra textdialoger
+
+Textdialogerna finns samlade i följande [språkfiler](https://github.com/umea-kommun/BasicUse/tree/master/src/locales). Man kan även styra vilken språkfil som ska användas i [env-fil](https://github.com/umea-kommun/BasicUse/blob/master/.env)
+
+### Utveckla integrationskomponenter
+
+wip...
+
 
