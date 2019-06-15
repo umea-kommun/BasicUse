@@ -52,9 +52,9 @@ E-tjänsterna består av ett antal datamodeller som ligger definerade i den här
 
 ### Ändra textdialoger
 
-Textdialogerna finns samlade i följande [språkfiler](https://github.com/umea-kommun/BasicUse/tree/master/src/locales). Man kan även styra vilken språkfil som ska användas i [env-fil](https://github.com/umea-kommun/BasicUse/blob/master/.env)
+Textdialogerna finns samlade i följande [språkfiler](https://github.com/umea-kommun/BasicUse/tree/master/src/locales). Man kan även styra vilken språkfil som ska användas i [env-filen](https://github.com/umea-kommun/BasicUse/blob/master/.env).
 
-### Utveckla integrationskomponenter
+### Utveckla egna integrationskomponenter
 
 wip...
 
