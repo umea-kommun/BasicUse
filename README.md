@@ -54,8 +54,10 @@ E-tjänsterna består av ett antal datamodeller som ligger definerade i den här
 
 Textdialogerna finns samlade i följande [språkfiler](https://github.com/umea-kommun/BasicUse/tree/master/src/locales). Man kan även styra vilken språkfil som ska användas i [env-filen](https://github.com/umea-kommun/BasicUse/blob/master/.env).
 
-### Utveckla egna integrationskomponenter
+### Utveckla egen autentisering 
 
-wip...
+Den här applikationen är förbered med [autenisering av användarna via Oauth2](#Autentisering). Har man behov av en annan typ av autentisering kan man skriva en egen klass som implementerar av [IAuthManager](https://github.com/umea-kommun/BasicUse/blob/master/src/plugins/auth/IAuthManager.ts). Placera klassens fil i `src/plugins/auth` och ange namnet på klassen i konfigurationsvariabeln `VUE_APP_AUTH_CLASS` i [env-filen](https://github.com/umea-kommun/BasicUse/blob/master/.env). 
+
+**Notera** att applikationen betraktar användaren som inloggad om det finns ett `user`-objekt i `vuex-store` som uppfyller interface [IUser](https://github.com/umea-kommun/BasicUse/blob/master/src/models/IForm.ts#L54). Här får man särskilt beakta variabeln `rawJwt` som kommer att skickas med i en "header"-parameter vid anrop till servern (`Authorization: Bearer {$store.state.user.rawJwt})`). Denna variabel behöver alltså inte vara en JWT-nyckel men den måste innehålla det värde som servern behöver för att kunna autentisera användaren, likaså måste servern även ha förmåga att autentisera användaren via denna header-parameter. Här kan tänkas på sikt att `IAuthManager` utökas med en till metod så att varje implementation får ansvara över att konfigurera hur autentisering ska ske, innan anropen går vidare till servern.
 
 
