@@ -4,6 +4,19 @@
 
 Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en **e-tjänstplattform** byggd på de senaste teknikerna på klient- och serversidan med Azure som hostingplattform. Den här applikationen, BasicUse, är en central del i denna plattform som används av medborgare för att från sin telefon eller dator initiera ärenden hos Umeå kommun. 
 
+#### Innehållsförteckning
+
+- [Kom igång på 5 minuter](#Komigångpå5minuter)
+- [Använda BasicUse i produktion](#AnvändaBasicUseiproduktion)
+  - [Autentisering](#Autentisering)
+  - [API för att ta emot inskickade ärenden](#APIföratttaemotinskickadeärenden)
+  - [API för att lagra och exponera e-tjänster](#APIförattlagraochexponerae-tjänster)
+- [Övrigt](#Övrigt)
+  - [Ändra gränssnittets textdialoger](#Ändragränssnittetstextdialoger)
+  - [Utveckla egen autentisering](#Utvecklaegenautentisering)
+  
+  
+  
 ## Kom igång på 5 minuter
 
 Genomför följande steg så har du på några minuter fått upp en applikation som du kan använda för att skapa och publicera e-tjänster.
@@ -50,7 +63,7 @@ E-tjänsterna består av ett antal datamodeller som ligger definerade i den här
 
 ## Övrigt
 
-### Ändra textdialoger
+### Ändra gränssnittets textdialoger
 
 Textdialogerna finns samlade i följande [språkfiler](https://github.com/umea-kommun/BasicUse/tree/master/src/locales). Man kan även styra vilken språkfil som ska användas i [env-filen](https://github.com/umea-kommun/BasicUse/blob/master/.env).
 
