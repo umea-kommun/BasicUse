@@ -12,9 +12,10 @@
     "stop": "taskkill /im node.exe /F"
   },
   "dependencies": {
+    "@babel/core": "7.4.5",
     "@babel/polyfill": "^7.0.0-rc.1",
     "@tinymce/tinymce-vue": "^1.1.0",
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "filepond-plugin-file-validate-size": "^1.0.4",
     "filepond-plugin-file-validate-type": "^1.1.0",
     "filepond-polyfill": "^1.0.2",
@@ -40,15 +41,16 @@
     "vuex-persist": "^1.8.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.4",
-    "@vue/cli-plugin-typescript": "^3.0.4",
-    "@vue/cli-service": "^3.0.4",
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-typescript": "^3.8.1",
+    "@vue/cli-service": "^3.8.4",
     "axios-mock-adapter": "^1.15.0",
     "debounce-decorator": "^1.0.6",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "tar": "^4.4.10",
     "typescript": "^3.0.0",
     "vue-cli-plugin-vuetify": "^0.2.0",
     "vue-template-compiler": "^2.5.17"
