@@ -26,7 +26,7 @@ Genomför följande steg så har du på några minuter fått upp en applikation 
 3. Öppna en kommandotolk och ställ dig i källkodsmappen och anropa följande kommando `npm install`.
 4. Du kan nu starta applikationen lokalt genom att anropa följande kommando `npm run serve` i kommandotolken.
 
-Nu kan du öppna en webbläsare och gå till http://localhost:8080/ för att testa att använda e-tjänster. Du kan även gå till http://localhost:8080/admin för att som administratör testat att skapa och redigera e-tjänster. 
+Nu kan du öppna en webbläsare och gå till http://localhost:8080/ för att testa att använda e-tjänster. Du kan även gå till http://localhost:8080/admin för att som administratör testa att skapa och redigera e-tjänster. 
 
 **Notera!** Den här applikationen är inställd att ge en **demonstration av de funktioner som erbjuds**, vilket innebär att all data sparas tillfälligt lokalt och att inloggning sker automatiskt med påhittade användarkonton.
 
