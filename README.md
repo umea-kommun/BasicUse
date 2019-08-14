@@ -24,7 +24,7 @@ Genomför följande steg så har du på några minuter fått upp en applikation 
 1. Installera [Node.js](https://nodejs.org/en/download/).
 2. Ladda ner applikationens källkod till din dator, antingen med `git` eller genom att [ladda ner en zip-fil](https://github.com/umea-kommun/BasicUse/archive/master.zip).
 3. Öppna en kommandotolk och ställ dig i källkodsmappen och anropa följande kommando `npm install`.
-4. Starta applikationen lokalt genom att anropa följande kommando `npm run serve` i kommandotolken.
+4. Starta applikationen lokalt genom att anropa kommandot `npm run serve` i kommandotolken.
 
 Nu kan du öppna en webbläsare och gå till http://localhost:8080/ för att testa att använda e-tjänster. Du kan även gå till http://localhost:8080/admin för att som administratör testa att skapa och redigera e-tjänster. 
 
