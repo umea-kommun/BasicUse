@@ -2,20 +2,7 @@
 
 # BasicUse
 
-Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en **e-tjänstplattform** byggd på de senaste teknikerna på klient- och serversidan med Azure som hostingplattform. Den här applikationen, BasicUse, är en central del i denna plattform som används av medborgare för att från sin telefon eller dator initiera ärenden hos Umeå kommun. 
-
-#### Innehållsförteckning
-
-- [Kom igång på 5 minuter](#kom-igång-på-5-minuter)
-- [Använda BasicUse i produktion](#använda-basicuse-i-produktion)
-  - [Autentisering](#Autentisering)
-  - [API för att ta emot inskickade ärenden](#API-för-att-ta-emot-inskickade-ärenden)
-  - [API för att lagra och exponera e-tjänster](#API-för-att-lagra-och-exponera-e-tjänster)
-- [Övrigt](#Övrigt)
-  - [Ändra gränssnittets textdialoger](#Ändra-gränssnittets-textdialoger)
-  - [Utveckla egen autentisering](#Utveckla-egen-autentisering)
-  
-  
+Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en **e-tjänstplattform** byggd på de senaste teknikerna på klient- och serversidan med Azure som hostingplattform. Den här applikationen, BasicUse, är en central del i denna plattform som används av medborgare för att från sin telefon eller dator initiera ärenden hos Umeå kommun.   
   
 ## Kom igång på 5 minuter
 
