@@ -18,7 +18,7 @@ Nu kan du öppna en webbläsare och gå till http://localhost:8080/ för att tes
 **Notera!** Den här applikationen är inställd att ge en **demonstration av de funktioner som erbjuds**, vilket innebär att all data sparas tillfälligt lokalt och att inloggning sker automatiskt med påhittade användarkonton.
 
 
-### Använda BasicUse i produktion
+## Använda BasicUse i produktion
 
 Läs mer på [wikin](https://github.com/umea-kommun/BasicUse/wiki) om hur du använder BasicUse i ett produktionscenario.
 
