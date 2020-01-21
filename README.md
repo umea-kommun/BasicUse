@@ -4,7 +4,7 @@
 
 Umeå kommun har sedan en tid tillbaka arbetat med att ta fram en **e-tjänstplattform** byggd på de senaste teknikerna på klient- och serversidan med Azure som hostingplattform. Den här applikationen, BasicUse, är en central del i denna plattform som används av medborgare för att från sin telefon eller dator initiera ärenden hos Umeå kommun.   
   
-## Kom igång på 5 minuter
+### Kom igång på 5 minuter
 
 Genomför följande steg så har du på några minuter fått upp en applikation som du kan använda för att skapa och publicera e-tjänster.
 
@@ -18,7 +18,7 @@ Nu kan du öppna en webbläsare och gå till http://localhost:8080/ för att tes
 **Notera!** Den här applikationen är inställd att ge en **demonstration av de funktioner som erbjuds**, vilket innebär att all data sparas tillfälligt lokalt och att inloggning sker automatiskt med påhittade användarkonton.
 
 
-## Använda BasicUse i produktion
+### Använda BasicUse i produktion
 
 Läs mer på [wikin](https://github.com/umea-kommun/BasicUse/wiki) om hur du använder BasicUse i ett produktionscenario.
 
