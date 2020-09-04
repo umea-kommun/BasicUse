@@ -46,7 +46,7 @@
     "@vue/cli-service": "^3.8.4",
     "axios-mock-adapter": "^1.15.0",
     "debounce-decorator": "^1.0.6",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^7.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
