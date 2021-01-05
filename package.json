@@ -15,7 +15,7 @@
     "@babel/core": "7.4.5",
     "@babel/polyfill": "^7.0.0-rc.1",
     "@tinymce/tinymce-vue": "^1.1.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "filepond-plugin-file-validate-size": "^1.0.4",
     "filepond-plugin-file-validate-type": "^1.1.0",
     "filepond-polyfill": "^1.0.2",
